@@ -1,0 +1,57 @@
+General Information:
+
+    Total Entries: 1383 rows
+    Total Columns: 44 columns
+
+Column Details:
+
+    Unnamed: 0.1: Index column (int64)
+    Unnamed: 0: Another index column (int64)
+    id: Event ID (float64)
+    eventId: Event type identifier (int64)
+    minute: Minute of the match when the event occurred (int64)
+    second: Second within the minute when the event occurred (float64)
+    teamId: Team identifier (int64)
+    x: X-coordinate on the pitch (float64)
+    y: Y-coordinate on the pitch (float64)
+    expandedMinute: Expanded match minute (int64)
+    period: Match period (e.g., 1H for first half) (object)
+    type: Type of event (e.g., Pass, Shot) (object)
+    outcomeType: Outcome of the event (e.g., Successful, Unsuccessful) (object)
+    qualifiers: Qualifiers associated with the event (object)
+    satisfiedEventsTypes: Satisfied event types (object)
+    isTouch: Whether it was a touch event (bool)
+    playerId: Player identifier (float64, NaN values present)
+    endX: End X-coordinate on the pitch (float64, NaN values present)
+    endY: End Y-coordinate on the pitch (float64, NaN values present)
+    blockedX: X-coordinate where the event was blocked (float64, mostly NaN)
+    blockedY: Y-coordinate where the event was blocked (float64, mostly NaN)
+    goalMouthZ: Z-coordinate for goal mouth events (float64, mostly NaN)
+    goalMouthY: Y-coordinate for goal mouth events (float64, mostly NaN)
+    isShot: Whether it was a shot event (object, mostly NaN)
+    relatedEventId: ID of related events (float64, mostly NaN)
+    relatedPlayerId: ID of related players (float64, mostly NaN)
+    cardType_x: Type of card (e.g., Yellow, Red) (object, mostly NaN)
+    isGoal_x: Whether the event resulted in a goal (object, mostly NaN)
+    cardType_y: Duplicate card type column (float64, mostly NaN)
+    isGoal_y: Duplicate isGoal column (float64, mostly NaN)
+    x1_bin_xT: X1 bin for expected threat model (float64, NaN values present)
+    y1_bin_xT: Y1 bin for expected threat model (float64, NaN values present)
+    x2_bin_xT: X2 bin for expected threat model (float64, NaN values present)
+    y2_bin_xT: Y2 bin for expected threat model (float64, NaN values present)
+    start_zone_value_xT: Start zone value for expected threat model (float64, NaN values present)
+    end_zone_value_xT: End zone value for expected threat model (float64, NaN values present)
+    xT: Expected threat value (float64, NaN values present)
+    teamName: Name of the team (object)
+    shirtNo: Player shirt number (float64, NaN values present)
+    name: Player name (object, NaN values present)
+    position: Player position (object, NaN values present)
+    isFirstEleven: Whether the player was in the starting eleven (object, NaN values present)
+    pro: Professional rating (float64)
+    shortName: Player short name (object, NaN values present)
+
+Notes:
+
+    Many columns have missing values (NaN), particularly for event-specific details like blocked coordinates, goal mouth coordinates, and related event/player IDs.
+    Columns related to expected threat (xT) models have partial data.
+    The dataset includes detailed event information, which can be used for in-depth analysis of match events, player performance, and team strategies.
