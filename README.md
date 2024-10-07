@@ -4,7 +4,7 @@ in order to create some visualisations to have a better understanding of what ha
 
 
 ## Some general info
-![Pizza](Plots/Pizza_SpainVsEngland.png)
+![Pizza](SpainEnglandVizPython/Plots/Pizza_SpainVsEngland.png)
 
 Here we have some general information about the match. What really stands out are the amount of passes done by Spain, almost the double of England, and the difference in possession.\
 Except the number of corners, the rest is not so different.
@@ -13,7 +13,7 @@ Except the number of corners, the rest is not so different.
 Since the main difference between both teams (according to the pizza plot) are the passes and the possession, I wanted to take a closer look.
 
 ### Histogram of passes by player
-![PassesMatch](Plots/Hist_PassesByPlayer.png)
+![PassesMatch](SpainEnglandVizPython/Plots/Hist_PassesByPlayer.png)
 I wanted to know exactly how many passes each player did. 
 The first six players with most passes are Spanish players: the 4 defenders, the left midfielder (Fabián Ruiz) and the left winger (Nico Williams). All of them have more than 40 passes.
 England, in the other hand, only has 3 players with more than 40 passes: their goalkeeper (Pickford), one defender (Walker) and one midfielder (Rice).
@@ -22,13 +22,13 @@ England, in the other hand, only has 3 players with more than 40 passes: their g
 After knowing who were the players with the most passes, I thought it would be interesting to know where did thoses passes happen.\
 I made a plot for each team and for each period for better readability.
 
-![PassSpainFH](Plots/PassesSpainFH.png) 
-![PassSpainSH](Plots/PassesSpainSH.png)
+![PassSpainFH](SpainEnglandVizPython/Plots/PassesSpainFH.png) 
+![PassSpainSH](SpainEnglandVizPython/Plots/PassesSpainSH.png)
 For the Spanish team, we see a big number of passes made in the opponent midfield, with somewhat of an arch going from the wingers positions back to the midfield specially during the first half.
 In fact, we see a lot of pressure coming from the sides, reflecting on the importance of the wingers (Nico Williams on the leftside and Lamine Yamal on the rightside).\
 During the second half, less passes seem to happen in the opponent midfield, but the arch is still there aswell as the pressure from the wingers.
-![PassEnglandFH](Plots/PassesEnglandFH.png)
-![PassEnglandSH](Plots/PassesEnglandSH.png)
+![PassEnglandFH](SpainEnglandVizPython/Plots/PassesEnglandFH.png)
+![PassEnglandSH](SpainEnglandVizPython/Plots/PassesEnglandSH.png)
 
 For the English team, there is a clear difference between the two periods.\
 During the first, few passes are made and the majority happens in their own field (midfield and defense).
@@ -40,7 +40,7 @@ Let's see now the passing networks for both teams during both periods.\
 I used an index of centralisation (i.e. how distributed the passes are between players), with 0 being totally decentralised and 1 being completely centralised in one player, in order to quantify a team's centralisation and compare it. Usually, the more centralised teams' passing networks are, the less succesfull the teams are. Here we have to keep in mind that the fewer the passes, the less accurate it is.\
 More [here](https://soccermatics.readthedocs.io/en/latest/lesson1/passnetworksExample.html).
 
-![PN_SpainFH](Plots/PN_SpainFH.png)
+![PN_SpainFH](SpainEnglandVizPython/Plots/PN_SpainFH.png)
 
 First, we see that the defense line is quite pushed, playing in the midfield, and then we see that Rodri is playing almost in the middle of the network, passing to everyone almost equally.\
 Secondly we see several important sub-networks:
@@ -51,7 +51,7 @@ Secondly we see several important sub-networks:
 Lastly, we see that the index of centralisation is quite high, but it does not seem to be a problem since it is really centralised on the defense and not on a single player that could be easily neutralised.
 
 
-![PN_SpainSH](Plots/PN_SpainSH.png)
+![PN_SpainSH](SpainEnglandVizPython/Plots/PN_SpainSH.png)
 
 During the second half of the game, there are a few changes:
 - The defense line goes back.
@@ -59,7 +59,7 @@ During the second half of the game, there are a few changes:
 - Fabián Ruiz plays more in the middle, assuming part of Rodri's role during the first period.
 - Carvajal plays way further, almost next to Yamal, in order to better distribute the ball (maybe also in order to cover Rodri's absence). He receives and gives more passes from/towards the midfield (Ruiz) that from/towards the defense (Le Normand).
 
-![PN_EnglandFH](Plots/PN_EnglandFH.png)
+![PN_EnglandFH](SpainEnglandVizPython/Plots/PN_EnglandFH.png)
 
 First, we see that every player usually plays in their own field except for just two players: Bellingham and Saka. Foden should be playing further, closer to Saka and at the same level as Bellingham, since they are both wingers in this match.\
 The various sub-networks here are:
@@ -70,7 +70,7 @@ The various sub-networks here are:
 
 The index of centralisation is quite good (and better than the Spanish one for the first half) but we have to remember that the number of England passes is low for the first period.
 
-![PN_EnglandSH](Plots/PN_EnglandSH.png)
+![PN_EnglandSH](SpainEnglandVizPython/Plots/PN_EnglandSH.png)
 
 We can see some changes here:
 - More aggressive playstyle: they play further now.
@@ -85,18 +85,28 @@ We can see some changes here:
 After having a look at the passes of the teams, we are going to concentrate on the wingers of both teams using their heatmaps.
 
 ### Nico Williams' heatmap
-![NW_heatmap](Plots/Heatmap_NicoWilliams.png)
+![NW_heatmap](SpainEnglandVizPython/Plots/Heatmap_NicoWilliams.png)
 
 ### Lamine Yamal's heatmap
-![LM_heatmap](Plots/Heatmap_LamineYamal.png)
+![LM_heatmap](SpainEnglandVizPython/Plots/Heatmap_LamineYamal.png)
 
 ### Jude Bellingham's heatmap
-![JB_heatmap](Plots/Heatmap_JudeBellingham.png)
+![JB_heatmap](SpainEnglandVizPython/Plots/Heatmap_JudeBellingham.png)
 
 ### Phil Foden's heatmap
-![PH_heatmap](Plots/Heatmap_PhilFoden.png)
+![PH_heatmap](SpainEnglandVizPython/Plots/Heatmap_PhilFoden.png)
 
 We see that the Spanish players are more aggressives than the English players. Lamine Yamal seems to never go in Spain's field, and Phil Foden has a really spreaded heatmap.
+
+## Process mining for the last two actions leading to shots
+### Spain process map for the last two actions leading to shots (relative-antecedent)
+![PMap_Spain](SpainEnglandVizR/Plots/ProcessMap_SpainLast2Actions.png)
+### Spain process matrix for the last two actions leading to shots (relative-antecedent)
+![PMat_Spain](SpainEnglandVizR/Plots/ProcessMatrix_SpainLast2Actions.png)
+### England process map for the last two actions leading to shots (relative-antecedent)
+![PMap_England](SpainEnglandVizR/Plots/ProcessMap_EnglandLast2Actions.png)
+### England process matrix for the last two actions leading to shots (relative-antecedent)
+![PMat_England](SpainEnglandVizR/Plots/ProcessMatrix_EnglandLast2Actions.png)
 
 ## Ressources used
 I essentially used the [mplsoccer documentation](https://mplsoccer.readthedocs.io/en/latest/#) and the [soccermathics website](https://soccermatics.readthedocs.io/en/latest/), 
