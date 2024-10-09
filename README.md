@@ -96,7 +96,7 @@ After having a look at the passes of the teams, we are going to concentrate on t
 ### Phil Foden's heatmap
 ![PH_heatmap](SpainEnglandVizPython/Plots/Heatmap_PhilFoden.png)
 
-We see that the Spanish players are more aggressives than the English players. Lamine Yamal seems to never go in Spain's field, and Phil Foden has a really spreaded heatmap.
+We see that the Spanish players are more aggressive than the English players. Lamine Yamal seems to never go in Spain's field, and Phil Foden has a really spreaded heatmap.
 
 ## Process mining for the last two actions leading to shots
 ### Spain process map for the last two actions leading to shots (relative-antecedent)
@@ -107,6 +107,16 @@ We see that the Spanish players are more aggressives than the English players. L
 ![PMap_England](SpainEnglandVizR/Plots/ProcessMap_EnglandLast2Actions.png)
 ### England process matrix for the last two actions leading to shots (relative-antecedent)
 ![PMat_England](SpainEnglandVizR/Plots/ProcessMatrix_EnglandLast2Actions.png)
+
+
+## Expected Threat (xT) analysis
+### Total xT by player
+![Barplot_totalxT](SpainEnglandVizPython/Plots/Barplot_totalxT.png)
+### Expected Threat cumulated by minute
+![Evo_xTPerMin](SpainEnglandVizPython/Plots/ExpectedThreatPerMinute.png)
+### The 10 passes with most xT
+![Top10PassesxT](SpainEnglandVizPython/Plots/PassesMostxT.png)
+
 
 ## Ressources used
 I essentially used the [mplsoccer documentation](https://mplsoccer.readthedocs.io/en/latest/#) and the [soccermathics website](https://soccermatics.readthedocs.io/en/latest/), 
