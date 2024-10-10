@@ -116,6 +116,17 @@ We see that the Spanish players are more aggressive than the English players. La
 ![Evo_xTPerMin](SpainEnglandVizPython/Plots/ExpectedThreatPerMinute.png)
 ### The 10 passes with most xT
 ![Top10PassesxT](SpainEnglandVizPython/Plots/PassesMostxT.png)
+### Passes with more than 0.02 xT
+![PassesGT_Spain](SpainEnglandVizPython/Plots/PassesxTGT_Spain.png)
+![PassesGT_England](SpainEnglandVizPython/Plots/PassesxTGT_England.png)
+
+## Positional 20 analysis based on expected threat (xT)
+### ![Plot_JuegoDePosicion](SpainEnglandVizPython/Plots/PlotJuegoDePosicion.png)
+
+### ![Heatmap_PositionalSpain](SpainEnglandVizPython/Plots/Positional_SpainTotalxT.png)
+### ![Heatmap_PositionalEngland](SpainEnglandVizPython/Plots/Positional_EnglandTotalxT.png)
+### ![Plot_BestPlayerPerZone](SpainEnglandVizPython/Plots/Plot_BestPlayerPerZone.png)
+
 
 
 ## Ressources used
