@@ -67,9 +67,8 @@ activitylog(case_id = "seqId",
 
 
 casted_data_spain %>%
-process_matrix(frequency("relative-antecedent")) %>%
+process_map(frequency("relative-antecedent"))
 plot()
-
 
 
 seq <- 0
