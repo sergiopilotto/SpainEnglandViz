@@ -96,12 +96,30 @@ We see that the Spanish players are more aggressive than the English players. La
 
 
 ## Expected Threat (xT) analysis
+### What is expected threat or xT
+Expected Threat (xT) is calculated by laying a 'value surface' over a football 
+pitch to divide it into zones, where each zone has a value assigned to it based 
+on how likely a goal is to be scored from that zone. Players can then be credited for moving the ball from zone to zone.
+The term "Expected Threat" was introduced by Karun Singh in 2018, but it is based on Sarah Rudd's work of her research 
+and [presentation](http://nessis.org/nessis11/rudd.pdf).\
+Based on Markov chains, it is arguably the most known possession value model in the industry.
+
 ### Total xT by player
-![Barplot_totalxT](SpainEnglandVizPython/Plots/Barplot_totalxT.png)
+Let's take a look at the expected threat created by each player.
+
+![Barplot_totalxT](SpainEnglandVizPython/Plots/Barplot_xTPerPlayer.png)
+We first see two players have a clear superior xT than the rest: Rodri and Cucurella. This is shocking considering Rodri only played the first half of the game.\
+Among the top 5, there is only one English player, and among the top 10, three. If look at the players that created a "negative threat", three out of the nine players are English, with both the wingers (Bellingham and Phoden) being there. On the Spanish side, the "worst" player is Morata followed by Oyarzabal, both playing in the same position (Oyarzabal replaced Morata at the end of the match).\
+The English player with the most cumulated xT is Pickford, their goalkeeper.
+
+
 ### Expected Threat cumulated by minute
 ![Evo_xTPerMin](SpainEnglandVizPython/Plots/ExpectedThreatPerMinute.png)
+Now, if we look at the xT cumulated per minute, we see two big positive peaks from Spain at the 12th minute and around the 88th minute. These correspond to the two passes with most xT, made by Rodri and Cucurella. There is another peak, this time negative, corresponding to the assist Bellingham did to Palmer. Since it was a pass to the back (and Bellingham was inside the penalty area), the expected threat gains are negative, independently of the outcome of the next action.
+
 ### The 10 passes with most xT
 ![Top10PassesxT](SpainEnglandVizPython/Plots/PassesMostxT.png)
+Here we have the 10 passes with most expected threat. Six are Spanish passes with one from inside the penalty area, and four are English passes, with two from inside the penalty area.
 ### Passes with more than 0.02 xT
 ![PassesGT](SpainEnglandVizPython/Plots/PassesxTGT_Merged.png)
 
