@@ -22,13 +22,12 @@ England, in the other hand, only has 3 players with more than 40 passes: their g
 After knowing who were the players with the most passes, I thought it would be interesting to know where did thoses passes happen.\
 I made a plot for each team and for each period for better readability.
 
-![PassSpainFH](SpainEnglandVizPython/Plots/PassesSpainFH.png) 
-![PassSpainSH](SpainEnglandVizPython/Plots/PassesSpainSH.png)
+![PassSpainFH](SpainEnglandVizPython/Plots/PassesSpainMerged.png)
+
 For the Spanish team, we see a big number of passes made in the opponent midfield, with somewhat of an arch going from the wingers positions back to the midfield specially during the first half.
 In fact, we see a lot of pressure coming from the sides, reflecting on the importance of the wingers (Nico Williams on the leftside and Lamine Yamal on the rightside).\
 During the second half, less passes seem to happen in the opponent midfield, but the arch is still there aswell as the pressure from the wingers.
-![PassEnglandFH](SpainEnglandVizPython/Plots/PassesEnglandFH.png)
-![PassEnglandSH](SpainEnglandVizPython/Plots/PassesEnglandSH.png)
+![PassEnglandFH](SpainEnglandVizPython/Plots/PassesEnglandMerged.png)
 
 For the English team, there is a clear difference between the two periods.\
 During the first, few passes are made and the majority happens in their own field (midfield and defense).
@@ -84,29 +83,16 @@ We can see some changes here:
 
 After having a look at the passes of the teams, we are going to concentrate on the wingers of both teams using their heatmaps.
 
-### Nico Williams' heatmap
-![NW_heatmap](SpainEnglandVizPython/Plots/Heatmap_NicoWilliams.png)
-
-### Lamine Yamal's heatmap
-![LM_heatmap](SpainEnglandVizPython/Plots/Heatmap_LamineYamal.png)
-
-### Jude Bellingham's heatmap
-![JB_heatmap](SpainEnglandVizPython/Plots/Heatmap_JudeBellingham.png)
-
-### Phil Foden's heatmap
-![PH_heatmap](SpainEnglandVizPython/Plots/Heatmap_PhilFoden.png)
+![PlayersHeatmap](SpainEnglandVizPython/Plots/Heatmap_PlayersMerged.png)
 
 We see that the Spanish players are more aggressive than the English players. Lamine Yamal seems to never go in Spain's field, and Phil Foden has a really spreaded heatmap.
 
 ## Process mining for the last two actions leading to shots
-### Spain process map for the last two actions leading to shots (relative-antecedent)
-![PMap_Spain](SpainEnglandVizR/Plots/ProcessMap_SpainLast2Actions.png)
-### Spain process matrix for the last two actions leading to shots (relative-antecedent)
-![PMat_Spain](SpainEnglandVizR/Plots/ProcessMatrix_SpainLast2Actions.png)
-### England process map for the last two actions leading to shots (relative-antecedent)
-![PMap_England](SpainEnglandVizR/Plots/ProcessMap_EnglandLast2Actions.png)
-### England process matrix for the last two actions leading to shots (relative-antecedent)
-![PMat_England](SpainEnglandVizR/Plots/ProcessMatrix_EnglandLast2Actions.png)
+### Spain process map and process matrix for the last two actions leading to shots (relative-antecedent)
+![PMap_Spain](SpainEnglandVizR/Plots/ProcessMapAndMatrixMerged_Spain.png)
+### England process map and process matrix for the last two actions leading to shots (relative-antecedent)
+![PMap_England](SpainEnglandVizR/Plots/ProcessMapAndMatrixMerged_England.png)
+
 
 
 ## Expected Threat (xT) analysis
@@ -117,15 +103,15 @@ We see that the Spanish players are more aggressive than the English players. La
 ### The 10 passes with most xT
 ![Top10PassesxT](SpainEnglandVizPython/Plots/PassesMostxT.png)
 ### Passes with more than 0.02 xT
-![PassesGT_Spain](SpainEnglandVizPython/Plots/PassesxTGT_Spain.png)
-![PassesGT_England](SpainEnglandVizPython/Plots/PassesxTGT_England.png)
+![PassesGT](SpainEnglandVizPython/Plots/PassesxTGT_Merged.png)
 
 ## Positional 20 analysis based on expected threat (xT)
-### ![Plot_JuegoDePosicion](SpainEnglandVizPython/Plots/PlotJuegoDePosicion.png)
-
-### ![Heatmap_PositionalSpain](SpainEnglandVizPython/Plots/Positional_SpainTotalxT.png)
-### ![Heatmap_PositionalEngland](SpainEnglandVizPython/Plots/Positional_EnglandTotalxT.png)
-### ![Plot_BestPlayerPerZone](SpainEnglandVizPython/Plots/Plot_BestPlayerPerZone.png)
+### What is Positional 20 (or Juego de Posesión) ?
+![Plot_JuegoDePosicion](SpainEnglandVizPython/Plots/PlotJuegoDePosicion.png)
+### Total xT per zone by team
+![Heatmap_Positional](SpainEnglandVizPython/Plots/Positional_TotalxTMerged.png)
+### Best player per zone (based on their total xT)
+![Plot_BestPlayerPerZone](SpainEnglandVizPython/Plots/Plot_BestPlayerPerZone.png)
 
 
 
