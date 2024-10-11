@@ -19,9 +19,6 @@ df_xTEngland.dropna(inplace=True)
 df_testS = df_xTSpain.sort_values(by='xT', ascending=True).reset_index()
 df_testE = df_xTEngland.sort_values(by='xT', ascending=True).reset_index()
 
-print(df_testS.xT.mean())
-print(df_testE.xT.mean())
-
 df_playersxT = pd.DataFrame()
 df_playersxT.insert(0, "players", df.loc[:, 'shortName'].unique())
 df_playersxT.dropna(inplace=True)
@@ -47,12 +44,21 @@ for i, row in df_playersxT.iterrows():
         df_playersxT.at[i, 'teamName'] = 'England'
 
 df_playersxT.dropna(inplace=True)
+
 df_playersxT = df_playersxT.sort_values(by='xT_mean', ascending=False).reset_index()
-
-
 
 fig = plt.figure(figsize=[34, 20])
 
 sns.barplot(data=df_playersxT, x='players', y='xT_mean', hue='teamName', palette=["#9c1f1f", "#1eadba"])
+plt.title('Expected threat (xT) per action by player', size=50)
+plt.show()
+
+
+
+df_playersxT = df_playersxT.sort_values(by='xT_total', ascending=False).reset_index()
+
+fig = plt.figure(figsize=[34, 20])
+sns.barplot(data=df_playersxT, x='players', y='xT_total', hue='teamName', palette=["#9c1f1f", "#1eadba"])
+plt.title('Expected threat (xT) cumulated by player', size=50)
 plt.show()
 

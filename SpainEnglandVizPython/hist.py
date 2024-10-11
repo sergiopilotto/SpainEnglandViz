@@ -12,10 +12,10 @@ df_passes = dataframe.groupby('type').get_group('Pass')
 fig = plt.figure(figsize=[34, 20])
 
 
-sns.set_style(rc={'axes.edgecolor': 'black'})
+
 
 sns.histplot(data=df_passes, x='shortName', hue='teamName', palette=["#1eadba", "#9c1f1f"])
-
+plt.title('Passes by player', fontsize=50, color='black')
 plt.show()
 
 

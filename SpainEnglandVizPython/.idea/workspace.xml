@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b05a4931-c158-4e9a-8257-f255a620a195" name="Changes" comment="update pizza">
-      <change afterPath="$PROJECT_DIR$/Plots/PlotJuegoDePosicion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plots/Plot_BestPlayerPerZone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bestPlayerPerZone.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plotJuegoDePosicion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/topxTPasses.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestxTPlayerByZone.py" beforeDir="false" afterPath="$PROJECT_DIR$/heatmapxTByZone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xTEvolution.py" beforeDir="false" afterPath="$PROJECT_DIR$/xTEvolution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Barplot_totalxT.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Barplot_totalxT.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plots/Hist_PassesByPlayer.png" beforeDir="false" afterPath="$PROJECT_DIR$/Plots/Hist_PassesByPlayer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hist.py" beforeDir="false" afterPath="$PROJECT_DIR$/hist.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xTAnalysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/xTAnalysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpainEnglandVizR/.RData" beforeDir="false" afterPath="$PROJECT_DIR$/../SpainEnglandVizR/.RData" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpainEnglandVizR/.Rhistory" beforeDir="false" afterPath="$PROJECT_DIR$/../SpainEnglandVizR/.Rhistory" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,29 +51,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.bestPlayerPerZone.executor": "Run",
-    "Python.heatmapPlayers.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.passNetwork.executor": "Run",
-    "Python.plotPasses.executor": "Run",
-    "Python.plotPizza.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.topxTPassesByTeam.executor": "Run",
-    "Python.xTAnalysis.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/sergi/Documents/Projects/SpainEnglandViz/SpainEnglandVizPython/Plots",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.bestPlayerPerZone.executor&quot;: &quot;Run&quot;,
+    &quot;Python.heatmapPlayers.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.passNetwork.executor&quot;: &quot;Run&quot;,
+    &quot;Python.plotPasses.executor&quot;: &quot;Run&quot;,
+    &quot;Python.plotPizza.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.topxTPassesByTeam.executor&quot;: &quot;Run&quot;,
+    &quot;Python.xTAnalysis.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sergi/Documents/Projects/SpainEnglandViz/SpainEnglandVizPython/Plots&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sergi\Documents\Projects\SpainEnglandViz\SpainEnglandVizPython\Plots" />
@@ -156,6 +155,7 @@
       <workItem from="1728550438416" duration="767000" />
       <workItem from="1728551216087" duration="3609000" />
       <workItem from="1728576097020" duration="13850000" />
+      <workItem from="1728644501005" duration="1104000" />
     </task>
     <task id="LOCAL-00001" summary="update pizza">
       <option name="closed" value="true" />
