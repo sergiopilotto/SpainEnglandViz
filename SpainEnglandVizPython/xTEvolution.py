@@ -51,7 +51,7 @@ plt.grid()
 plt.xlabel('Minutes')
 plt.ylabel('xT')
 
-plt.title('Expected threat (xT) cumulated by minute', fontsize = 20, fontweight = 'bold')
+plt.title('Expected threat (xT) cumulated per minute', fontsize = 20, fontweight = 'bold')
 plt.legend(loc='best')
 
 plt.xlim(0, 96)
