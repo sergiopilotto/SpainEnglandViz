@@ -176,5 +176,5 @@ I only used R for the process mining part, using the bupaverse and dplyr librari
 The dataset is in csv format.\
 All the images are entirely made by me, and all the data comes from the dataset (except the possession percentages of the pizza plot, the source is in the code).
 I also used [https://imageonline.co/merge-png.php](https://imageonline.co/merge-png.php) to merge some plots for better readability on this file, but all the images are made with Python and R.\
-Some minutes marks may vary from the real ones: the second goal happens in the 86th minute and note in the 88th, for example. This is because I used the extendedMinute variable during the analysis (to avoid repeated values), so the second period begins on the 47th minute. 
+Some minutes marks may vary from the real ones: the second goal happens in the 86th minute and note in the 88th, for example. This is because I used the expandedMinute variable during the analysis (to avoid repeated values), so the second period begins on the 47th minute. 
 
